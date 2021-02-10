@@ -17,6 +17,8 @@ namespace EvolutionUnpack
         BinaryWriter tocWriter;
         int archiveVersion;
 
+        List<string> failures = new List<string>();
+
         List<FileEntry> files = new List<FileEntry>();
         List<FileEntry> directories = new List<FileEntry>();
         Dictionary<int, string> dirPathCache = new Dictionary<int, string>();
@@ -151,11 +153,14 @@ namespace EvolutionUnpack
                             }
                             i += decompLen;
                         }
-                        if (i != entry.Length) throw new InvalidDataException("Decompressed length does not match length in file entry.");
+                        if (i != entry.Length)
+                        {
+                            throw new InvalidDataException("Decompressed length does not match length in file entry.");
+                        }
                     }
-                    catch
+                    catch(Exception e)
                     {
-                        Console.WriteLine("Failed to decompress {0}", filePath);
+                        failures.Add("Failed to decompress " + filePath + " : " + e.Message);
                         throw;
                     }
                 }
@@ -177,6 +182,7 @@ namespace EvolutionUnpack
                     Console.WriteLine("Error extracting file: {0}", e.Message);
                 }
             }
+            Console.WriteLine("Failures: {0}/{1}", failures.Count, files.Count);
         }
 		
 		public void Dispose()

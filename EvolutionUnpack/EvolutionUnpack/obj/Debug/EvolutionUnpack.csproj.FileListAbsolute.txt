@@ -1,0 +1,8 @@
+D:\Documents\Dev\WF-Evolution-Unpack\EvolutionUnpack\EvolutionUnpack\bin\Debug\EvolutionUnpack.exe
+D:\Documents\Dev\WF-Evolution-Unpack\EvolutionUnpack\EvolutionUnpack\bin\Debug\EvolutionUnpack.pdb
+D:\Documents\Dev\WF-Evolution-Unpack\EvolutionUnpack\EvolutionUnpack\bin\Debug\GMWareCommon.dll
+D:\Documents\Dev\WF-Evolution-Unpack\EvolutionUnpack\EvolutionUnpack\obj\Debug\EvolutionUnpack.csprojAssemblyReference.cache
+D:\Documents\Dev\WF-Evolution-Unpack\EvolutionUnpack\EvolutionUnpack\obj\Debug\EvolutionUnpack.csproj.CoreCompileInputs.cache
+D:\Documents\Dev\WF-Evolution-Unpack\EvolutionUnpack\EvolutionUnpack\obj\Debug\EvolutionUnpack.csproj.CopyComplete
+D:\Documents\Dev\WF-Evolution-Unpack\EvolutionUnpack\EvolutionUnpack\obj\Debug\EvolutionUnpack.exe
+D:\Documents\Dev\WF-Evolution-Unpack\EvolutionUnpack\EvolutionUnpack\obj\Debug\EvolutionUnpack.pdb
